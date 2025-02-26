@@ -1,0 +1,36 @@
+<!Manipulando DOM>
+<!Este e os próximos exercícios (até o 38) serão manipulação de DOM, então estarão em um arquivo HTML com o JavaScript incluso ao final da tag body
+
+Para o desafio 30, você deve criar um arquivo HTML contendo uma tag h1 e um texto dentro dela. Usando JavaScript, você deve alterar o texto de h1.>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 30</title>
+</head>
+<body>
+    <h1 id="titulo">exercicio 30 tem que mudar</h1>
+    <button id="botao1">mudar</button>
+
+    <script>
+        let botao1 = document.getElementById('botao1')
+
+        botao1.addEventListener('click', () => {
+            if (document.getElementById('titulo').innerHTML == 'exercicio 30 tem que mudar') {
+                document.getElementById('titulo').innerHTML = 'exercicio 30 mudou'
+                botao1.innerHTML = 'voltar'
+            }else {
+                document.getElementById('titulo').innerHTML = 'exercicio 30 tem que mudar'
+                botao1.innerHTML = 'mudar'
+            }
+          
+            
+        })
+
+        
+    </script>
+</body>
+</html>

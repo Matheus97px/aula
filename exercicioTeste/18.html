@@ -1,0 +1,40 @@
+<!Inversão de string
+/*Crie uma função que recebe uma string e retorna seu inverso. Imprima o resultado na tela. */
+
+//foi a ia que criou
+/*O método split() divide um objeto de string em um array de string separando a string em substrings.
+
+O método reverse() inverte um array diretamente. O primeiro elemento do array passa a ser o último e o último se torna o primeiro.
+
+O método join() une todos os elementos de um array em uma string.
+por ser string o uso do ' '>
+
+
+<html>
+    <head>
+        <title>exercicio 18</title>
+    </head>
+    <body>
+        <h2>se for frase escreva tudo junto e sem letras maiusculas</h2>
+        <input type="text" name="frase" id="frase">
+        <button id="mudar" onclick="mudar()">mudar</button>
+        <h1 id="resultado"></h1>
+
+        <script>
+                
+           
+              
+            function mudar() {
+                let frase = document.getElementById('frase').value
+                 let recebe = frase.split('').reverse().join('')
+                    
+                   if(frase == recebe) {
+                    document.getElementById('resultado').innerHTML = recebe + ' é um palindro  ' + frase 
+                   } else{
+                    document.getElementById('resultado').innerHTML = recebe + ' não é um palindro ' + frase
+                   }
+    
+            }
+        </script>
+    </body>
+</html>

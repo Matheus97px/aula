@@ -8,4 +8,4 @@ let area = PI * raio * raio;
 
 console.log("A area da circunferencia é "+ area+ " m²");
 
-console.log(Math.PI);
+console.log(Math.PI * raio * raio);

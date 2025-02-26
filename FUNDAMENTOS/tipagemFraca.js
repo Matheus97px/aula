@@ -10,4 +10,4 @@ console.log(typeof qualquer);
 
 let valor ="";
 let numero = 1;
-let pqp = false; // produto quimico perigos...kkkkk
+let pqp = false; // produto quimico perigoso...kkkkk

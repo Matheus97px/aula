@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>exercicio 21</title>
+    
+    </head>
+    <body>
+        <h1>lista de numeros aleatorios</h1>
+        <h3>digite o maior numero e o menor e o tamanho da lista</h3>
+        <input type="number" name="max" id="max" placeholder="maior" >
+        <input type="number" name="min" id="min" placeholder="menor" >
+        <input type="number" name="tamanho" id="tamanho" placeholder="tamanho">
+
+        <button id="botao" onclick="aleatorio()">gerar</button>
+
+        <h1 id="resultado"></h1>
+
+
+
+        <script>
+            function aleatorio() {
+                let max = Math.ceil(document.getElementById('max').value)
+                let min = Math.floor(document.getElementById('min').value)
+                let tamanho = document.getElementById('tamanho').value
+                let lista = []
+                if(max < min) {
+                    document.getElementById('resultado').innerHTML = "o maior nao pode ser menor que o menor"
+                }else if (max > min) {
+                for (let i = 0; i < tamanho; i++){
+                    lista.push(Math.floor(Math.random() * (max - min) + min))
+                }
+                 document.getElementById('resultado').innerHTML = lista
+            }}
+        </script>
+    </body>
+</html>

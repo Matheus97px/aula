@@ -1,0 +1,40 @@
+<!Contagem de vogais Crie uma função que recebe uma string e retorna a quantidade de vogais no palavra recebido. Imprima o
+    resultado na tela.>
+
+
+
+    <html>
+
+    <head>
+        <title>exercicio 19</title>
+    </head>
+
+    <body>
+
+        <input type="text" name="palavra" id="palavraVolgal" placeholder="digite uma palavra">
+
+        <button id="botao" onclick="vogal()">Vogais</button>
+
+        <h1 id="resultado"></h1>
+
+        <script>
+            function vogal() {
+                let palavra = document.getElementById('palavraVolgal').value
+
+                let vogal = 0
+                let vogais = []
+                for (let i = 0; i < palavra.length; i++) {
+                    if (palavra[i] == 'a' || palavra[i] == 'e' || palavra[i] == 'i' || palavra[i] == 'o' || palavra[i] == 'u' || palavra[i] == 'A' || palavra[i] == 'E' || palavra[i] == 'I' || palavra[i] == 'O' || palavra[i] == 'U') {
+                        vogal++
+                        vogais.push(palavra[i])
+                    }
+                }
+
+                document.getElementById('resultado').innerHTML = `${palavra} tem ${vogal} vogais e as vogais sao ${vogais}`
+            }
+            
+
+        </script>
+    </body>
+
+    </html>
